@@ -1,0 +1,1 @@
+test for gitconfig setting to each account
