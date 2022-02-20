@@ -5,7 +5,7 @@ import { Greet } from './components/Greet';
 function App() {
   return (
     <div className="App">
-      <Greet name='JIYEONGYANGdev'/>
+      <Greet name='JIYEONGYANGdev' todoUnchecked={5} isLoggedIn={true} />
     </div>
   );
 }
