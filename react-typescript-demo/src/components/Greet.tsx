@@ -1,7 +1,11 @@
-export const Greet  = () => {
+type GreetProps = {
+  name: string,
+
+}
+export const Greet  = (props: GreetProps) => {
   return (
     <div>
-      <h2>Hi JIYEONGYANGdev</h2>
+      <h2>Hi {props.name}</h2>
     </div>
   )
 }
