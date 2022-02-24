@@ -1,6 +1,10 @@
 import React from 'react';
 import './App.css';
+import { Button } from './components/Button';
 import { Greet } from './components/Greet';
+import { Heading } from './components/Heading';
+import { Input } from './components/Input';
+import { Oscar } from './components/Oscar';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
 import { Status } from './components/Status';
@@ -31,7 +35,15 @@ function App() {
       <Greet name='JIYEONGYANGdev' todoUnchecked={5} isLoggedIn={true} />
       <Person names={personName} />
       <PersonList namesList={nameList} />
+      <br/>
       <Status status={'error'} />
+      <Heading>PlaceHolder Text</Heading>
+      <Oscar>
+        <Heading>Oscar goes to Leonardo Dicaprio</Heading>
+      </Oscar>
+      <br/>
+      <Button handleClick={(event, id) => console.log('button clicked', event, id)}/>
+      <Input value='' handleChange={event => console.log(event)}/>
     </div>
   );
 }
